@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NICKET - Stylish Apparel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f8f9fa; }
+        .hero { background: url('https://via.placeholder.com/1920x600?text=NICKET+Hero+Image') no-repeat center center; background-size: cover; height: 60vh; display: flex; align-items: center; justify-content: center; color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+        .product-card { margin: 20px; transition: transform 0.3s; }
+        .product-card:hover { transform: scale(1.05); box-shadow: 0 10px 20px rgba(0,0,0,0.15); }
+        .product-img { height: 400px; object-fit: cover; } /* ছবি সুন্দর ফিট করার জন্য */
+        footer { background-color: #343a40; color: white; padding: 20px; text-align: center; }
+    </style>
+</head>
+<body>
+
+    <!-- Header with Logo Image -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="Nickel Logo" style="height: 55px; width: auto;">
+                <!-- চাইলে টেক্সটও রাখতে পারো: Nickel -->
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container text-center">
+            <h1>Welcome to NICKET</h1>
+            <p>It's not just clothing, it shapes your philosophy.</p>
+            <a href="#products" class="btn btn-primary btn-lg">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Products Section - Updated with Real Style Images -->
+    <section id="products" class="container my-5">
+        <h2 class="text-center mb-5">Our Premium Shirts</h2>
+        <div class="row justify-content-center">
+
+            <!-- Product 1: Bold Abstract Black-White Shirt -->
+            <div class="col-md-4">
+                <div class="card product-card border-0 shadow-sm">
+                    <img src="https://i.etsystatic.com/42231377/r/il/b76b2a/6336395314/il_fullxfull.6336395314_4zw1.jpg" 
+                         class="card-img-top product-img" alt="Bold Abstract Graphic Shirt">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Abstract Fusion Shirt</h5>
+                        <p class="card-text fw-bold text-primary">TAKA 550/-</p>
+                        <small class="text-muted">Modern bold pattern • Premium fabric</small><br>
+                        <a href="#" class="btn btn-primary mt-2">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2: Light Blue Striped Shirt -->
+            <div class="col-md-4">
+                <div class="card product-card border-0 shadow-sm">
+                    <img src="https://www.bexley.com/fstrz/r/s/www.bexley.com/media/catalog/product/cache/bc591ea1e15be6c82eb2a6d8638291c5/4/3/436009-augustin_bleu_clair_et_blanc_2_1bis.jpg" 
+                         class="card-img-top product-img" alt="Light Blue Striped Shirt">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Classic Blue Stripe</h5>
+                        <p class="card-text fw-bold text-primary">TAKA 550/-</p>
+                        <small class="text-muted">Breathable cotton • Timeless style</small><br>
+                        <a href="#" class="btn btn-primary mt-2">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3: Subtle Gray Striped Shirt -->
+            <div class="col-md-4">
+                <div class="card product-card border-0 shadow-sm">
+                    <img src="https://m.media-amazon.com/images/I/71Rpea1Wm9L.jpg" 
+                         class="card-img-top product-img" alt="Gray Striped Formal Shirt">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Elegant Gray Stripe</h5>
+                        <p class="card-text fw-bold text-primary">TAKA 550/-</p>
+                        <small class="text-muted">Slim fit • Office ready</small><br>
+                        <a href="#" class="btn btn-primary mt-2">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 4: Pink & White Striped Shirt (extra one for variety) -->
+            <div class="col-md-4">
+                <div class="card product-card border-0 shadow-sm">
+                    <img src="https://i.ebayimg.com/images/g/Vs8AAOSwpI1heLZd/s-l1200.jpg" 
+                         class="card-img-top product-img" alt="Pink White Striped Shirt">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Soft Pink Stripe</h5>
+                        <p class="card-text fw-bold text-primary">TAKA 330/-</p>
+                        <small class="text-muted">Casual elegance • Light & comfy</small><br>
+                        <a href="#" class="btn btn-primary mt-2">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About & Contact same as before -->
+    <section id="about" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">About Us</h2>
+            <p class="text-center">NICKET is dedicated to providing high-quality, trendy apparel at affordable prices. Inspired by urban fashion, we focus on comfort and style for everyday wear.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="container my-5">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <p class="text-center">DM us on Facebook for orders or inquiries. Free shipping on orders over $50!</p>
+    </section>
+
+    <footer>
+        <p>© 2026 NICKET. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
